@@ -48,13 +48,13 @@ def main():
     """
    
    #pages
-   st.set_page_config(
-     page_title="Prediksi Harga Berlian",
-     page_icon="💵",
-    )
+st.set_page_config(
+ page_title="Prediksi Harga Berlian",
+ page_icon="💵",
+)
 
-    st.title("")
-    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
+st.title("")
+st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
       
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
