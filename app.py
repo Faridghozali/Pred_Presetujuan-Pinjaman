@@ -52,31 +52,7 @@ add_selectbox = st.sidebar.selectbox(
 )
 
 if option == 'Home' or option == '':
-    st.write("""# Halaman Utama""") #menampilkan halaman utama
-elif option == 'Data':
-    st.write("""## Data""") #menampilkan judul halaman dataframe
-
-    #membuat dataframe dengan pandas yang terdiri dari 2 kolom dan 4 baris data
-    df = pd.Data({
-        'Column 1':[1,2,3,4],
-        'Column 2':[10,12,14,16]
-    })
-    df #menampilkan dataframe
-elif option == 'Biodata':
-    st.write("""## Draw Biodata""") #menampilkan judul halaman 
-
-    #membuat variabel chart data yang berisi data dari dataframe
-    #data berupa angka acak yang di-generate menggunakan numpy
-    #data terdiri dari 2 kolom dan 20 baris
-    chart_data = pd.DataFrame(
-        np.random.randn(20,2), 
-        columns=['a','b']
-    )
-    #menampilkan data dalam bentuk chart
-    st.line_chart(chart_data)
-    #data dalam bentuk tabel
-    chart_data
-      
+    st.write("""# Halaman Utama""") #menampilkan halaman utama      
 st.image('home.png')
 
 # this is the main function in which we define our webpage  
