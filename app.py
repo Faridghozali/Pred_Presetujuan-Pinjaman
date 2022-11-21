@@ -77,8 +77,7 @@ def main():
 if __name__=='__main__': 
     main()
     
- def main():       
-    # front end elements of the web page 
+    main():       
     html_temp = """ 
     <h2>Judul Artikel 1</h2>
     <p>...penjelasan artikel 1...</p>
