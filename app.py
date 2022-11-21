@@ -47,6 +47,15 @@ def main():
     <h1 style ="color:black;text-align:center;">Streamlit Loan Prediction ML App</h1> 
     </div> 
     """
+   
+   
+    st.set_page_config(
+     page_title="Prediksi Harga Berlian",
+     page_icon="👋",
+    )
+
+    st.title("")
+    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
       
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
