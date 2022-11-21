@@ -76,13 +76,13 @@ def main():
     st.title("FAQ > Masalah Pinjeman")
     st.image('info.png')
     
-    def Data():
-        st.markdown("# Data ❄️")
-        st.sidebar.markdown("# Data ❄️")
+     def Data():
+         st.markdown("# Data ❄️")
+         st.sidebar.markdown("# Data ❄️")
  
-    def Biodata():
-        st.markdown("# Biodata 🎉")
-        st.sidebar.markdown("# Biodata 🎉")
+     def Biodata():
+         st.markdown("# Biodata 🎉")
+         st.sidebar.markdown("# Biodata 🎉")
 
 page_names_to_funcs = {
     "Home": Home,
