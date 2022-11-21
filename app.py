@@ -50,9 +50,10 @@ add_selectbox = st.sidebar.selectbox(
     "Pilihan Halaman",
     ("Home", "Data", "Biodata")
 )
-
-if option == 'Home' or option == '':
-    st.write("""# Halaman Utama""") #menampilkan halaman utama      
+    if page == 'Home':
+        Home.run()
+    else:
+        Home.run()
 st.image('home.png')
 
 # this is the main function in which we define our webpage  
