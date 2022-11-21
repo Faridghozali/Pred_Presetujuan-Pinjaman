@@ -38,7 +38,7 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
         pred = 'Approved'
     return pred
    
-   #pages
+#pages
 st.set_page_config(
  page_title=" Loan Prediction ML App",
  page_icon="💵",
