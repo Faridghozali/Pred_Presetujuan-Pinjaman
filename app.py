@@ -40,8 +40,8 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
    
 #pages
 st.set_page_config(
- page_title=" Loan Prediction ML App",
- page_icon="💵",
+    page_title=" Loan Prediction ML App",
+    page_icon="💵",
 )
 
 st.title("")
