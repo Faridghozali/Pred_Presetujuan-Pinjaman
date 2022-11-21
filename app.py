@@ -1,3 +1,5 @@
+%%writefile app.py
+ 
 import pickle
 import streamlit as st
  
@@ -36,9 +38,10 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
         pred = 'Rejected'
     else:
         pred = 'Approved'
-    return pred    
-   
-   # this is the main function in which we define our webpage  
+    return pred
+      
+  
+# this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
     html_temp = """ 
@@ -46,32 +49,23 @@ def main():
     <h1 style ="color:black;text-align:center;">Streamlit Loan Prediction ML App</h1> 
     </div> 
     """
-   
-   #pages
-st.set_page_config(
- page_title="Prediksi Harga Berlian",
- page_icon="💵",
-)
-
-st.title("")
-st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
       
     # display the front end aspect
-st.markdown(html_temp, unsafe_allow_html = True) 
+    st.markdown(html_temp, unsafe_allow_html = True) 
       
     # following lines create boxes in which user can enter data required to make prediction 
-Gender = st.selectbox('Gender',("Male","Female"))
-Married = st.selectbox('Marital Status',("Unmarried","Married")) 
-ApplicantIncome = st.number_input("Applicants monthly income") 
-LoanAmount = st.number_input("Total loan amount")
-Credit_History = st.selectbox('Credit_History',("Unclear Debts","No Unclear Debts"))
-result =""
+    Gender = st.selectbox('Gender',("Male","Female"))
+    Married = st.selectbox('Marital Status',("Unmarried","Married")) 
+    ApplicantIncome = st.number_input("Applicants monthly income") 
+    LoanAmount = st.number_input("Total loan amount")
+    Credit_History = st.selectbox('Credit_History',("Unclear Debts","No Unclear Debts"))
+    result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
-if st.button("Predict"): 
- result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
- st.success('Your loan is {}'.format(result))
- print(LoanAmount)
+    if st.button("Predict"): 
+        result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
+        st.success('Your loan is {}'.format(result))
+        print(LoanAmount)
      
 if __name__=='__main__': 
     main()
