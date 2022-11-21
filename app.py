@@ -49,10 +49,6 @@ def Home():
     st.markdown("# Home🎈")
     st.sidebar.markdown("# Home🎈")
     st.image('home.png')
-        
-    def Data():
-         st.markdown("# Data ❄️")
-         st.sidebar.markdown("# Data ❄️")
     # this is the main function in which we define our webpage  
 def main():
       # front end elements of the web page 
@@ -80,7 +76,9 @@ def main():
     st.title("FAQ > Masalah Pinjeman")
     st.image('info.png')
 
- 
+    def Data():
+        st.markdown("# Data ❄️")
+        st.sidebar.markdown("# Data ❄️")
     def Biodata():
          st.markdown("# Biodata 🎉")
          st.sidebar.markdown("# Biodata 🎉")
