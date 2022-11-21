@@ -39,7 +39,7 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     return pred
 
 st.set_page_config(
-    page_title="Loan Prediction ML App",
+    page_title="Prediksi Pinjaman",
     page_icon="💵",
 )
 
@@ -53,7 +53,7 @@ def main():
     # front end elements of the web page 
     html_temp = """ 
     <div style ="background-color:yellow;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Loan Prediction ML App</h1> 
+    <h1 style ="color:black;text-align:center;">Aplikasi Prediksi Pinjaman</h1> 
     </div> 
     """
       
@@ -69,7 +69,7 @@ def main():
     result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
-    if st.button("Predict"): 
+    if st.button("Prediksi"): 
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
