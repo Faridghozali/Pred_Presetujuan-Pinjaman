@@ -39,7 +39,7 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     return pred
 
 st.set_page_config(
-    page_title="Prediksi Harga Berlian",
+    page_title="Loan Prediction ML App",
     page_icon="💵",
 )
 
