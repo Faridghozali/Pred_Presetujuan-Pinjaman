@@ -76,10 +76,10 @@ def main():
     st.title("FAQ > Masalah Pinjeman")
     st.image('info.png')
 
-    def Data():
+ def Data():
         st.markdown("# Data ❄️")
         st.sidebar.markdown("# Data ❄️")
-    def Biodata():
+ def Biodata():
          st.markdown("# Biodata 🎉")
          st.sidebar.markdown("# Biodata 🎉")
 
