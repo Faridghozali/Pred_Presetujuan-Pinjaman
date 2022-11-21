@@ -45,12 +45,12 @@ st.set_page_config(
     page_icon="💵",
 )
 
-st.title("")
-
 def Home():
     st.markdown("# Home🎈")
     st.sidebar.markdown("# Home🎈")
     st.image('home.png')
+    st.title("FAQ > Masalah Pinjeman")
+    st.image('info.png')
     # this is the main function in which we define our webpage  
 def main():
       # front end elements of the web page 
@@ -76,9 +76,6 @@ def main():
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
     
-    st.title("FAQ > Masalah Pinjeman")
-    st.image('info.png')
-
 def Data():
     st.markdown("# Data ❄️")
     st.sidebar.markdown("# Data ❄️")
