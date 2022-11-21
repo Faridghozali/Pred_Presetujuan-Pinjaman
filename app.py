@@ -48,16 +48,17 @@ st.set_page_config(
 st.title("")
 
 def main_page():
-    st.markdown("# Main page 🎈")
-    st.sidebar.markdown("# Main page 🎈")
+    st.markdown("# Home🎈")
+    st.sidebar.markdown("# Home🎈")
+    st.image('home.png')
 
 def page2():
-    st.markdown("# Page 2 ❄️")
-    st.sidebar.markdown("# Page 2 ❄️")
+    st.markdown("# Data ❄️")
+    st.sidebar.markdown("# Data ❄️")
 
 def page3():
-    st.markdown("# Page 3 🎉")
-    st.sidebar.markdown("# Page 3 🎉")
+    st.markdown("# Biodata 🎉")
+    st.sidebar.markdown("# Biodata 🎉")
 
 page_names_to_funcs = {
     "Main Page": main_page,
