@@ -51,6 +51,18 @@ def Home():
     st.markdown("# Home🎈")
     st.sidebar.markdown("# Home🎈")
     st.image('home.png')
+    # this is the main function in which we define our webpage  
+def main():       
+    # front end elements of the web page 
+    html_temp = """ 
+    <div style ="background-color:yellow;padding:13px"> 
+    <h1 style ="color:black;text-align:center;">Aplikasi Prediksi Pinjaman</h1> 
+    </div> 
+    """
+      
+    
+    st.title("FAQ > Masalah Pinjeman")
+    st.image('info.png')
 
 def Data():
     st.markdown("# Data ❄️")
@@ -69,15 +81,7 @@ page_names_to_funcs = {
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 
-# this is the main function in which we define our webpage  
-def main():       
-    # front end elements of the web page 
-    html_temp = """ 
-    <div style ="background-color:yellow;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Aplikasi Prediksi Pinjaman</h1> 
-    </div> 
-    """
-      
+
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
       
@@ -95,8 +99,7 @@ def main():
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
 
-    st.title("FAQ > Masalah Pinjeman")
-    st.image('info.png')
+   
       
 if __name__=='__main__': 
     main()
