@@ -70,6 +70,12 @@ def main():
     Credit_History = st.selectbox('Riwayat Kredit',("pernah","tidak pernah"))
     result =""
     
+    # when 'Predict' is clicked, make the prediction and store it 
+    if st.button("Prediksi"): 
+        result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
+        st.success('Your loan is {}'.format(result))
+        print(LoanAmount)
+    
     st.title("FAQ > Masalah Pinjeman")
     st.image('info.png')
 
@@ -90,12 +96,6 @@ page_names_to_funcs = {
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 
-      
-    # when 'Predict' is clicked, make the prediction and store it 
-    if st.button("Prediksi"): 
-        result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
-        st.success('Your loan is {}'.format(result))
-        print(LoanAmount)
 
    
       
