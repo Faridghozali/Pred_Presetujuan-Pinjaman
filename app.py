@@ -37,7 +37,13 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     else:
         pred = 'Approved'
     return pred    
+ st.set_page_config(
+     page_title="Prediksi Harga Berlian",
+     page_icon="👋",
+    )
 
+    st.title("")
+    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
    
    # this is the main function in which we define our webpage  
 def main():       
@@ -47,15 +53,6 @@ def main():
     <h1 style ="color:black;text-align:center;">Streamlit Loan Prediction ML App</h1> 
     </div> 
     """
-   
-   
-    st.set_page_config(
-     page_title="Prediksi Harga Berlian",
-     page_icon="👋",
-    )
-
-    st.title("")
-    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
       
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
