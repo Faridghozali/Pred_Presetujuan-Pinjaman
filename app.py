@@ -74,7 +74,7 @@ def main():
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
 
-st.image('footer.png')
+    st.image('footer.png')
         
      
 if __name__=='__main__': 
