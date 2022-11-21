@@ -47,22 +47,22 @@ st.set_page_config(
 
 st.title("")
 
-def main_page():
+def Home():
     st.markdown("# Home🎈")
     st.sidebar.markdown("# Home🎈")
     st.image('home.png')
 
-def page2():
+def Data():
     st.markdown("# Data ❄️")
     st.sidebar.markdown("# Data ❄️")
 
-def page3():
+def Biodata():
     st.markdown("# Biodata 🎉")
     st.sidebar.markdown("# Biodata 🎉")
 
 page_names_to_funcs = {
-    "Main Page": main_page,
-    "Page 2": page2,
+    "Home": Home,
+    "Page 2": Data,
     "Page 3": page3,
 }
 
