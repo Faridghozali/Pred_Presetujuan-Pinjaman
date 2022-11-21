@@ -74,7 +74,6 @@ def main():
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
         
-   st.title("umur")
      
 if __name__=='__main__': 
     main()
