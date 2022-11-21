@@ -66,8 +66,6 @@ page_names_to_funcs = {
     "Page 3": page3,
 }
 
-    selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-    page_names_to_funcs[selected_page]()
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
