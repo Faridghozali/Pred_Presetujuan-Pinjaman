@@ -6,6 +6,14 @@ pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
  
 @st.cache()
+
+ st.set_page_config(
+     page_title="Prediksi Harga Berlian",
+     page_icon="👋",
+    )
+
+    st.title("")
+    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
   
 # defining the function which will make the prediction using the data which the user inputs 
 def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):   
@@ -37,13 +45,6 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     else:
         pred = 'Approved'
     return pred    
- st.set_page_config(
-     page_title="Prediksi Harga Berlian",
-     page_icon="👋",
-    )
-
-    st.title("")
-    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
    
    # this is the main function in which we define our webpage  
 def main():       
