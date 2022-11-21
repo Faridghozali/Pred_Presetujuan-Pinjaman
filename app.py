@@ -74,7 +74,8 @@ def main():
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
 
-    st.image('footer.png')
+    st.title("Apa syarat pengajuan pinjaman di Cairin ?")
+    st.image('info.png')
         
      
 if __name__=='__main__': 
