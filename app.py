@@ -67,3 +67,12 @@ def main():
      
 if __name__=='__main__': 
     main()
+  
+  #pages biodata
+  st.set_page_config(
+    page_title="Prediksi layak pinjam",
+    page_icon="👋",
+)
+
+st.title("")
+st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
