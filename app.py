@@ -6,14 +6,6 @@ pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
  
 @st.cache()
-
- st.set_page_config(
-     page_title="Prediksi Harga Berlian",
-     page_icon="👋",
-    )
-
-    st.title("")
-    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
   
 # defining the function which will make the prediction using the data which the user inputs 
 def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):   
@@ -54,6 +46,15 @@ def main():
     <h1 style ="color:black;text-align:center;">Streamlit Loan Prediction ML App</h1> 
     </div> 
     """
+   
+   #pages
+   st.set_page_config(
+     page_title="Prediksi Harga Berlian",
+     page_icon="💵",
+    )
+
+    st.title("")
+    st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
       
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
