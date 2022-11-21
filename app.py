@@ -44,7 +44,10 @@ st.set_page_config(
 )
 
 st.title("")
-st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
       
 st.image('home.png')
 
