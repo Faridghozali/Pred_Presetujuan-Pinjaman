@@ -54,7 +54,7 @@ def main():
      page_icon="👋",
     )
 
-    st.title("bcd ")
+    st.title("")
     st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
       
     # display the front end aspect
