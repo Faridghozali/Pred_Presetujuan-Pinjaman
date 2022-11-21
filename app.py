@@ -74,9 +74,7 @@ def main():
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
         
-    html_temp = """ 
-    <h1 style ="color:black;text-align:center;">Aplikasi Prediksi Pinjama</h1> 
-    """
+   st.title("umur")
      
 if __name__=='__main__': 
     main()
