@@ -72,8 +72,9 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
-     st.title("FAQ > Masalah Pinjeman")
-     st.image('info.png')
+        
+    st.title("FAQ > Masalah Pinjeman")
+    st.image('info.png')
     
     def Data():
         st.markdown("# Data ❄️")
