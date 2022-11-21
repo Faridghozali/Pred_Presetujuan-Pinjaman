@@ -63,7 +63,7 @@ def Biodata():
 page_names_to_funcs = {
     "Home": Home,
     "Page 2": Data,
-    "Page 3": page3,
+    "Page 3": Biodata,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
