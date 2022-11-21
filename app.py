@@ -1,4 +1,4 @@
-%%writefile app.py
+writefile app.py
  
 import pickle
 import streamlit as st
