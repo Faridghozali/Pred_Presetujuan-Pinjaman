@@ -1,7 +1,5 @@
 import pickle
 import streamlit as st
-import aspose.words as aw
-
   
 # loading the trained model
 pickle_in = open('classifier.pkl', 'rb') 
@@ -79,32 +77,16 @@ def main():
 if __name__=='__main__': 
     main()
     
-# Load the license
-wordToHtml = aw.License()
-wordToHtml.set_license("Aspose.Total.lic")
-
-# Create an empty document and instantiate DocumentBuilder with it
-wordDoc = aw.Document()
-docBuilder = aw.DocumentBuilder(wordDoc)
-
-# Set flag to add a different header for the first page
-docBuilder.page_setup.different_first_page_header_footer = True
-
-# Create different headers
-docBuilder.move_to_header_footer(aw.HeaderFooterType.HEADER_FIRST)
-docBuilder.write("First page header")
-docBuilder.move_to_header_footer(aw.HeaderFooterType.HEADER_PRIMARY)
-docBuilder.write("Primary header for all common pages")
-
-# Move control to the first section of the document
-docBuilder.move_to_section(0)
-
-# Add multiple pages with some text and add page breaks to observe the functionality
-for x in range(6):
-    docBuilder.writeln("Page " + str(x + 1))
-    docBuilder.insert_break(aw.BreakType.PAGE_BREAK)
-
-# Save the output file
-wordDoc.save("Output.docx")
-
-print ("Header added successfully")
+ def main():       
+    # front end elements of the web page 
+    html_temp = """ 
+    <h2>Judul Artikel 1</h2>
+    <p>...penjelasan artikel 1...</p>
+    <p>... </p>
+    <p>... </p>
+    </main>
+    <footer>
+    <p>...copyright 2014 duniailkom...</p>
+    </footer>
+    """
+  
