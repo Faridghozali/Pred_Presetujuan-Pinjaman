@@ -46,10 +46,11 @@ st.set_page_config(
 )
 
 st.title("")
-st.image('home.png')
+
 def main_page():
     st.markdown("# Main page 🎈")
     st.sidebar.markdown("# Main page 🎈")
+    st.image('home.png')
 
 def page2():
     st.markdown("# Page 2 ❄️")
