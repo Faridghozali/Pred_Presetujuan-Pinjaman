@@ -40,11 +40,7 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
 
 with st.sidebar:
     with st.echo():
-        st.write("This code will be printed to the sidebar.")
-
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
+         st.write("This code will be printed to the sidebar.")
 
 st.set_page_config(
     page_title="Prediksi Pinjaman",
