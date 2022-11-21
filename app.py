@@ -59,7 +59,16 @@ def main():
     <h1 style ="color:black;text-align:center;">Aplikasi Prediksi Pinjaman</h1> 
     </div> 
     """
+    # display the front end aspect
+    st.markdown(html_temp, unsafe_allow_html = True) 
       
+    # following lines create boxes in which user can enter data required to make prediction 
+    Gender = st.selectbox('Jenis Kelamin',("Pria","Wanita"))
+    Married = st.selectbox('Status Pernikahan',("Belum Menikah","Menikah")) 
+    ApplicantIncome = st.number_input("Penghasilan Bulanan") 
+    LoanAmount = st.number_input("Total Jumlah Pinjaman")
+    Credit_History = st.selectbox('Riwayat Kredit',("pernah","tidak pernah"))
+    result =""
     
     st.title("FAQ > Masalah Pinjeman")
     st.image('info.png')
@@ -81,17 +90,6 @@ page_names_to_funcs = {
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 
-
-    # display the front end aspect
-    st.markdown(html_temp, unsafe_allow_html = True) 
-      
-    # following lines create boxes in which user can enter data required to make prediction 
-    Gender = st.selectbox('Jenis Kelamin',("Pria","Wanita"))
-    Married = st.selectbox('Status Pernikahan',("Belum Menikah","Menikah")) 
-    ApplicantIncome = st.number_input("Penghasilan Bulanan") 
-    LoanAmount = st.number_input("Total Jumlah Pinjaman")
-    Credit_History = st.selectbox('Riwayat Kredit',("pernah","tidak pernah"))
-    result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Prediksi"): 
