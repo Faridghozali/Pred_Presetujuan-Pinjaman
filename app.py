@@ -49,8 +49,6 @@ def Home():
     st.markdown("# Home🎈")
     st.sidebar.markdown("# Home🎈")
     st.image('home.png')
-    st.title("FAQ > Masalah Pinjeman")
-    st.image('info.png')
     # this is the main function in which we define our webpage  
 def main():
       # front end elements of the web page 
@@ -61,7 +59,6 @@ def main():
       """
       # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
-      
     # following lines create boxes in which user can enter data required to make prediction 
     Gender = st.selectbox('Jenis Kelamin',("Pria","Wanita"))
     Married = st.selectbox('Status Pernikahan',("Belum Menikah","Menikah")) 
@@ -75,6 +72,8 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
+        st.title("FAQ > Masalah Pinjeman")
+        st.image('info.png')
     
 def Data():
     st.markdown("# Data ❄️")
