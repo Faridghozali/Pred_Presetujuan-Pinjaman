@@ -61,11 +61,11 @@ def main():
     st.markdown(html_temp, unsafe_allow_html = True) 
       
     # following lines create boxes in which user can enter data required to make prediction 
-    Gender = st.selectbox('Gender',("Male","Female"))
-    Married = st.selectbox('Marital Status',("Unmarried","Married")) 
-    ApplicantIncome = st.number_input("Applicants monthly income") 
-    LoanAmount = st.number_input("Total loan amount")
-    Credit_History = st.selectbox('Credit_History',("Unclear Debts","No Unclear Debts"))
+    Gender = st.selectbox('Jenis Kelamin',("Pria","Wanita"))
+    Married = st.selectbox('Status Pernikahan',("Belum Menikah","Menikah")) 
+    ApplicantIncome = st.number_input("Penghasilan Bulanan") 
+    LoanAmount = st.number_input("Total Jumlah Pinjaman")
+    Credit_History = st.selectbox('Riwayat Kredit',("pernah","tidak pernah"))
     result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
