@@ -46,7 +46,10 @@ st.set_page_config(
 st.title("")
 st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
       
-  
+st.title('Prediksi Harga Berlian')
+st.image('panduanPengisian.png')
+st.header('Masukkan Kriteria Berlian:')
+
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
