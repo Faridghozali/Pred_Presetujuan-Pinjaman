@@ -45,8 +45,8 @@ st.set_page_config(
 
 st.title("")
 add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
+    "Halaman Utama",
+    ("Home", "Data", "Biodata")
 )
       
 st.image('home.png')
