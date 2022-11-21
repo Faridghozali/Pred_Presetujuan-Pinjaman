@@ -72,16 +72,16 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
-        st.title("FAQ > Masalah Pinjeman")
-        st.image('info.png')
+     st.title("FAQ > Masalah Pinjeman")
+     st.image('info.png')
     
-def Data():
-    st.markdown("# Data ❄️")
-    st.sidebar.markdown("# Data ❄️")
-
-def Biodata():
-    st.markdown("# Biodata 🎉")
-    st.sidebar.markdown("# Biodata 🎉")
+    def Data():
+        st.markdown("# Data ❄️")
+        st.sidebar.markdown("# Data ❄️")
+ 
+    def Biodata():
+        st.markdown("# Biodata 🎉")
+        st.sidebar.markdown("# Biodata 🎉")
 
 page_names_to_funcs = {
     "Home": Home,
