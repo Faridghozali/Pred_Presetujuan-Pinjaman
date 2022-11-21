@@ -76,16 +76,4 @@ def main():
      
 if __name__=='__main__': 
     main()
-    
-    main():       
-    html_temp = """ 
-    <h2>Judul Artikel 1</h2>
-    <p>...penjelasan artikel 1...</p>
-    <p>... </p>
-    <p>... </p>
-    </main>
-    <footer>
-    <p>...copyright 2014 duniailkom...</p>
-    </footer>
-    """
   
