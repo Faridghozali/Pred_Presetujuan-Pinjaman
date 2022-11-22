@@ -46,8 +46,8 @@ st.set_page_config(
 )
 
 def Home():
-    st.markdown("# Home🎈")
-    st.sidebar.markdown("# Home🎈")
+    st.markdown("# Home🏠")
+    st.sidebar.markdown("# Home🏠")
     st.image('home.png')
     # this is the main function in which we define our webpage  
 def main():
@@ -77,11 +77,11 @@ def main():
     st.image('info.png')
 
 def Data():
-    st.markdown("# Data ❄️")
-    st.sidebar.markdown("# Data ❄️")
+    st.markdown("# Data 📊")
+    st.sidebar.markdown("# Data 📊")
 def Biodata():
-    st.markdown("# Biodata 🎉")
-    st.sidebar.markdown("# Biodata 🎉")
+    st.markdown("# Biodata 🧑🏻‍💻")
+    st.sidebar.markdown("# Biodata 🧑🏻‍💻")
 
 page_names_to_funcs = {
     "Home": Home,
