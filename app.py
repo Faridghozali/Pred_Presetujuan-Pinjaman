@@ -50,13 +50,7 @@ def Home():
     st.sidebar.markdown("# Home🏠")
     st.image('home.png')
     # this is the main function in which we define our webpage  
-def main():
-      # front end elements of the web page 
-    html_temp = """ 
-      <div style ="background-color:yellow;padding:13px"> 
-      <h1 style ="color:black;text-align:center;">Aplikasi Prediksi Pinjaman</h1> 
-      </div> 
-      """
+    st.title('Aplikasi Prediksi Pinjaman')
       # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
     # following lines create boxes in which user can enter data required to make prediction 
