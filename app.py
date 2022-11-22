@@ -71,9 +71,8 @@ def main():
     if st.button("Prediksi"): 
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
-        print(LoanAmount)
-        
-    st.title("FAQ > Masalah Pinjeman")
+        print(LoanAmount)    
+    st.title("FAQ > Masalah Pinjaman")
     st.image('info.png')
 
 def Data():
