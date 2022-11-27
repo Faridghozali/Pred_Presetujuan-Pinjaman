@@ -49,7 +49,7 @@ col1, col2= st.columns(2)
 
 with col1:
    st.header("Data Peminjam Online")
-   st.link("https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv")
+   st.write("https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv")
 
 with col2:
    st.header("A dog")
