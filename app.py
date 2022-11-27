@@ -58,44 +58,33 @@ with col3:
    st.header("An owl")
    st.image("https://static.streamlit.io/examples/owl.jpg")
   
-    # this is the main function in which we define our webpage  
+# this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
     html_temp = """ 
     <div style ="background-color:yellow;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Aplikasi Prediksi Pinjaman</h1> 
+    <h1 style ="color:black;text-align:center;">Streamlit Loan Prediction ML App</h1> 
     </div> 
     """
       
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
+      
     # following lines create boxes in which user can enter data required to make prediction 
-    Gender = st.selectbox('Jenis Kelamin',("Pria","Wanita"))
-    Married = st.selectbox('Status Pernikahan',("Belum Menikah","Menikah")) 
-    ApplicantIncome = st.number_input("Penghasilan Bulanan") 
-    LoanAmount = st.number_input("Total Jumlah Pinjaman")
-    Credit_History = st.selectbox('Riwayat Kredit',("pernah","tidak pernah"))
+    Gender = st.selectbox('Gender',("Male","Female"))
+    Married = st.selectbox('Marital Status',("Unmarried","Married")) 
+    ApplicantIncome = st.number_input("Applicants monthly income") 
+    LoanAmount = st.number_input("Total loan amount")
+    Credit_History = st.selectbox('Credit_History',("Unclear Debts","No Unclear Debts"))
     result =""
-    
+      
     # when 'Predict' is clicked, make the prediction and store it 
-    if st.button("Prediksi"): 
+    if st.button("Predict"): 
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
-        print(LoanAmount)    
+        print(LoanAmount)
     st.title("FAQ > Masalah Pinjaman")
     st.image('info.png')
-
-page_names_to_funcs = {
-    "Home": Home,
-    "Data": Data,
-    "Biodata": Biodata,
-}
-
-selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-page_names_to_funcs[selected_page]()
-
-
-   
       
 if __name__=='__main__': 
     main()
