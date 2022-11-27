@@ -46,6 +46,19 @@ st.set_page_config(
 
 st.image("home.png")
 st.sidebar.header("kategori")
+@st.cache
+def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_csv().encode('utf-8')
+
+csv = convert_df(my_large_df)
+
+st.download_button(
+    label="Download data as CSV",
+    data=csv,
+    file_name='data.csv',
+    mime='text/csv',
+)
 
 # this is the main function in which we define our webpage  
 def main():       
@@ -72,24 +85,6 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
-        st.write("FAQ > Masalah Pinjaman")
-        st.image('info.png')
-        col1, col2= st.columns(2)
 
-with col1:
-   st.header("Data Peminjam Online")
-   st.write("https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv")
-
-with col2:
-   st.header("A dog")
-   st.image("https://static.streamlit.io/examples/dog.jpg") 
-txt = st.text_area('Text to analyze', '''
-    It was the best of times, it was the worst of times, it was
-    the age of wisdom, it was the age of foolishness, it was
-    the epoch of belief, it was the epoch of incredulity, it
-    was the season of Light, it was the season of Darkness, it
-    was the spring of hope, it was the winter of despair, (...)
-    ''')
-st.write('Sentiment:', run_sentiment_analysis(txt))
 if __name__=='__main__': 
     main()
