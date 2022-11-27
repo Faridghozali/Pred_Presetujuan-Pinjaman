@@ -48,7 +48,7 @@ st.image("home.png")
 with st.sidebar:
   st.header("kategori")
   st.write("[Data Pinjaman Online](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv)")
-  st.write("Biodata(https://mybiodata.21-119farid.repl.co/biodata.html)")
+  st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
   st.header("Haaiii")
 
 # this is the main function in which we define our webpage  
