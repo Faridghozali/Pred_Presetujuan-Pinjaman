@@ -45,20 +45,11 @@ st.set_page_config(
 )
 
 st.image("home.png")
-st.sidebar.header("kategori")
-@st.cache
-def convert_df(df):
-    # IMPORTANT: Cache the conversion to prevent computation on every rerun
-    return df.to_csv().encode('utf-8')
-
-csv = convert_df(my_large_df)
-
-st.download_button(
-    label="Download data as CSV",
-    data=csv,
-    file_name='data.csv',
-    mime='text/csv',
-)
+with st.sidebar:
+  st.header("kategori")
+  st.subheader("sub")
+  st.write("bwxshv ghv hwdx")
+  st.header("Haaiii")
 
 # this is the main function in which we define our webpage  
 def main():       
