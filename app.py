@@ -39,15 +39,12 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
         pred = 'Approved'
     return pred
   
-st.sidebar.Header("Kategori")
-  
 st.set_page_config(
     page_title="Prediksi Pinjaman",
     page_icon="💵",
 )
 
 st.image("home.png")
-
 col1, col2= st.columns(2)
 
 with col1:
