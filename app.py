@@ -39,13 +39,8 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     else:
         pred = 'Approved'
     return pred
-  
-st.set_page_config(
-    page_title="Prediksi Pinjaman",
-    page_icon="💵",
-)
 
-tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+  tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
 data = np.random.randn(10, 1)
 
 tab1.subheader("A tab with a chart")
@@ -53,6 +48,11 @@ tab1.line_chart(data)
 
 tab2.subheader("A tab with the data")
 tab2.write(data)
+  
+st.set_page_config(
+    page_title="Prediksi Pinjaman",
+    page_icon="💵",
+)
     # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
