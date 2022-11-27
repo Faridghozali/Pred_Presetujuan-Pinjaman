@@ -44,6 +44,9 @@ st.set_page_config(
     page_title="Prediksi Pinjaman",
     page_icon="💵",
 )
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
     # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
