@@ -73,7 +73,7 @@ def main():
         print(LoanAmount)
     st.title("FAQ > Masalah Pinjaman")
     st.image('info.png')
-col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
 
 with col1:
    st.header("A cat")
