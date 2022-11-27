@@ -10,12 +10,6 @@ classifier = pickle.load(pickle_in)
 @st.cache()
   
 # defining the function which will make the prediction using the data which the user inputs 
-
-  
-st.set_page_config(
-    page_title="Prediksi Pinjaman",
-    page_icon="💵",
-)
 st.sidebar.header("Pilihan kategori")
 #Upluad file CSV Untuk pilihan kategori
 upluad_file.st.sidebar.file_Uploader("Upload file CSV anda",type=["csv"])
@@ -50,6 +44,11 @@ else :
     else:
         pred = 'Approved'
     return pred
+  
+st.set_page_config(
+    page_title="Prediksi Pinjaman",
+    page_icon="💵",
+)
     
 st.image("home.png")
 col1, col2= st.columns(2)
