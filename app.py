@@ -82,10 +82,8 @@ with col2:
    st.image("https://static.streamlit.io/examples/dog.jpg")
 
 with col3:
-   st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg")
-    st.title("FAQ > Masalah Pinjaman")
-    st.image('info.png')
+   st.header("FAQ > Masalah Pinjaman")
+   st.image('info.png')
 
       
 if __name__=='__main__': 
