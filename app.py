@@ -45,7 +45,8 @@ st.set_page_config(
 )
 
 st.image("home.png")
-with st.sidebar:
+st.title("")
+st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
   st.header("kategori")
   st.write("[Data Pinjaman Online](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv)")
   st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
