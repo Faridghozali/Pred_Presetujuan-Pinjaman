@@ -45,6 +45,7 @@ st.set_page_config(
 )
 
 st.image("home.png")
+st.sidebar.header("kategori")
 col1, col2= st.columns(2)
 
 with col1:
