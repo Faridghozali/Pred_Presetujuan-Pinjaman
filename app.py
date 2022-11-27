@@ -43,6 +43,7 @@ st.set_page_config(
     page_title="Prediksi Pinjaman",
     page_icon="💵",
 )
+
 st.sidebar.Header('Kategori')
 st.image("home.png")
 col1, col2= st.columns(2)
