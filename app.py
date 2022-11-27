@@ -47,7 +47,7 @@ st.set_page_config(
 st.image("home.png")
 with st.sidebar:
   st.header("kategori")
-  st.selectbox("[Data](https://raw.githubusercontent.com/dataprofessor/data/master/penguins_example.csv))
+  st.selectbox("hsxvyv")
   st.write("bwxshv ghv hwdx")
   st.header("Haaiii")
 
