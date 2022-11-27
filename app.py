@@ -2,6 +2,8 @@ import pickle
 import streamlit as st
 import pandas as pd
 import numpy as np
+
+st.write("Aplikasi Berbasis Web untuk Memprediksi Layak Pinjaman Online Data Peminjam Online () ")
   
 # loading the trained model
 pickle_in = open('classifier.pkl', 'rb') 
