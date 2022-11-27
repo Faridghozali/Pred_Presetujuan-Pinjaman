@@ -10,8 +10,19 @@ classifier = pickle.load(pickle_in)
 @st.cache()
   
 # defining the function which will make the prediction using the data which the user inputs 
-def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):   
- 
+
+  
+st.set_page_config(
+    page_title="Prediksi Pinjaman",
+    page_icon="💵",
+)
+st.sidebar.header("Pilihan kategori")
+#Upluad file CSV Untuk pilihan kategori
+upluad_file.st.sidebar.file_Uploader("Upload file CSV anda",type=["csv"])
+if upload_file is not none:
+  inputan=pd.read_csv(upload_file)
+else :
+  def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):   
     # Pre-processing user input    
     if Gender == "Male":
         Gender = 0
@@ -39,13 +50,7 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     else:
         pred = 'Approved'
     return pred
-  
-st.set_page_config(
-    page_title="Prediksi Pinjaman",
-    page_icon="💵",
-)
-st.sidebar.header("Pilihan kategori")
-
+    
 st.image("home.png")
 col1, col2= st.columns(2)
 
