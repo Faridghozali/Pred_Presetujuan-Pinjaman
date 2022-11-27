@@ -40,7 +40,6 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
         pred = 'Approved'
     return pred
 
-  tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
 data = np.random.randn(10, 1)
 
 tab1.subheader("A tab with a chart")
