@@ -47,7 +47,7 @@ st.set_page_config(
 st.image("home.png")
 with st.sidebar:
   st.header("kategori")
-  st.subheader=st.selectbox("sxqbvyhb")
+  st.write("[shvyhvfs](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/edit/main/app.py)")
   st.write("bwxshv ghv hwdx")
   st.header("Haaiii")
 
