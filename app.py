@@ -39,14 +39,6 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     else:
         pred = 'Approved'
     return pred
-
-data = np.random.randn(10, 1)
-
-tab1.subheader("A tab with a chart")
-tab1.line_chart(data)
-
-tab2.subheader("A tab with the data")
-tab2.write(data)
   
 st.set_page_config(
     page_title="Prediksi Pinjaman",
