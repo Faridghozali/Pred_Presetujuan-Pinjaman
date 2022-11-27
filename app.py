@@ -45,7 +45,7 @@ st.set_page_config(
     page_icon="💵",
 )
 st.image("home.png")
-col1, col2, col3 = st.columns(3)
+col1, col2= st.columns(2)
 
 with col1:
    st.header("A cat")
@@ -55,9 +55,6 @@ with col2:
    st.header("A dog")
    st.image("https://static.streamlit.io/examples/dog.jpg")
 
-with col3:
-   st.header("FAQ > Masalah Pinjaman")
-   st.image('info.png')
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
@@ -83,6 +80,8 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
+        st.header("FAQ > Masalah Pinjaman")
+        st.image('info.png')
       
 if __name__=='__main__': 
     main()
