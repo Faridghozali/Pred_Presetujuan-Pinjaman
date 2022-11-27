@@ -47,7 +47,7 @@ st.set_page_config(
 st.image("home.png")
 with st.sidebar:
   st.header("kategori")
-  st.selectbox("hsxvyv")
+  st.subheader=st.selectbox("sxqbvyhb")
   st.write("bwxshv ghv hwdx")
   st.header("Haaiii")
 
