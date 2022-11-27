@@ -2,8 +2,6 @@ import pickle
 import streamlit as st
 import pandas as pd
 import numpy as np
-
-st.write("Aplikasi Berbasis Web untuk Memprediksi Layak Pinjaman Online Data Peminjam Online () ")
   
 # loading the trained model
 pickle_in = open('classifier.pkl', 'rb') 
@@ -50,8 +48,8 @@ st.image("home.png")
 col1, col2= st.columns(2)
 
 with col1:
-   st.header("A cat")
-   st.image("https://static.streamlit.io/examples/cat.jpg")
+   st.header("Data Peminjam Online")
+   st.link("https://static.streamlit.io/examples/cat.jpg")
 
 with col2:
    st.header("A dog")
