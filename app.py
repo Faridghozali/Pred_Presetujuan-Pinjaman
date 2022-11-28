@@ -76,11 +76,11 @@ def main():
       
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
-       result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
-       st.success('Your loan is {}'.format(result))
-       print(LoanAmount)
-       st.image("info.png")
-       st.header("FAQ > Masalah App")
+        result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
+        st.success('Your loan is {}'.format(result))
+        print(LoanAmount)
+        st.image("info.png")
+        st.header("FAQ > Masalah App")
 
 if __name__=='__main__': 
     main()
