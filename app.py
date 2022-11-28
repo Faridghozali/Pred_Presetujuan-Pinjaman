@@ -50,7 +50,9 @@ st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
 with st.sidebar:
   st.write("[Data Pinjaman Online](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv)")
   st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
-  st.header("Haaiii")
+  st.header("Tentang Aplikasi")
+  st.write("Gender disini menjelaskan jenis kelamin peminjam")
+  st.subheader("dcsjbjuvbksdn")
 
 # this is the main function in which we define our webpage  
 def main():       
