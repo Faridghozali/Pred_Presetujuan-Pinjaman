@@ -52,11 +52,11 @@ with st.sidebar:
   st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
   st.write("-----------------")
   st.header("Tentang Aplikasi")
-  st.text("> Gender disini menjelaskan jenis kelamin peminjam")
-  st.text("> Marital Status ")
-  st.text("> Applicants monthly income")
-  st.text("> Total loan amount")
-  st.text("> Credit_History")
+  st.text("> Gender adalah untuk peminjam memasukkan jenis kelamin")
+  st.text("> Marital Status adalah untuk peminjam memasukkan Status perkawinan ")
+  st.text("> Applicants monthly income adalah untuk peminjam mesukkan pendapatan setiap bulan ")
+  st.text("> Total loan amount adalah untuk peminjam mesukkan total jumlah pinjaman")
+  st.text("> Credit_History adalah untuk mesukkan riwayat kredit peminjam")
   
 
 # this is the main function in which we define our webpage  
