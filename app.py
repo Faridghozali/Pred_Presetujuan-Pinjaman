@@ -50,6 +50,7 @@ st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
 with st.sidebar:
   st.write("[Data Pinjaman Online](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv)")
   st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
+  st.write("-----------------")
   st.header("Tentang Aplikasi")
   st.text("> Gender disini menjelaskan jenis kelamin peminjam")
   st.text("> Marital Status ")
