@@ -83,8 +83,9 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
-    st.image("info.png")
     st.header("FAQ > Masalah App")
+    st.image("info.png")
+    
 
 if __name__=='__main__': 
     main()
