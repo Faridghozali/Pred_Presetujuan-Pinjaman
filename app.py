@@ -51,9 +51,12 @@ with st.sidebar:
   st.write("[Data Pinjaman Online](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv)")
   st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
   st.header("Tentang Aplikasi")
-  st.write("Gender disini menjelaskan jenis kelamin peminjam")
-  st.markdown("> dcsjbjuvbksdn")
-  st.text("> shwbhybdc")
+  st.text("> Gender disini menjelaskan jenis kelamin peminjam")
+  st.text("> Marital Status ")
+  st.text("> Applicants monthly income")
+  st.text("> Total loan amount")
+  st.text("> Credit_History")
+  
 
 # this is the main function in which we define our webpage  
 def main():       
@@ -80,8 +83,8 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
-        st.image("info.png")
-        st.header("FAQ > Masalah App")
+    st.image("info.png")
+    st.header("FAQ > Masalah App")
 
 if __name__=='__main__': 
     main()
