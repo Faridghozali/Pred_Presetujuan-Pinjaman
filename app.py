@@ -52,7 +52,8 @@ with st.sidebar:
   st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
   st.header("Tentang Aplikasi")
   st.write("Gender disini menjelaskan jenis kelamin peminjam")
-  st.subheader("dcsjbjuvbksdn")
+  st.markdown("dcsjbjuvbksdn")
+  st.text("shwbhybdc")
 
 # this is the main function in which we define our webpage  
 def main():       
