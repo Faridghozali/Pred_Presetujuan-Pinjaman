@@ -49,6 +49,7 @@ st.title("")
 st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
 with st.sidebar:
   st.write("[Data Pinjaman Online](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/prediksiloan.csv)")
+  st.write("[pre-processing](https://colab.research.google.com/drive/1M5BLquVoCbl9KyfmfvcsNd_MEGfVRD3B)")
   st.write("[Source Code](https://github.com/Faridghozali/Pred_Presetujuan-Pinjaman/blob/main/app.py)")
   st.write("[Biodata](https://mybiodata.21-119farid.repl.co/biodata.html)")
   st.write("-----------------")
