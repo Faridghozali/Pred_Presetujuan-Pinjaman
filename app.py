@@ -58,7 +58,11 @@ with st.sidebar:
   st.text("> Applicants monthly income adalah untuk peminjam mesukkan pendapatan setiap bulan ")
   st.text("> Total loan amount adalah untuk peminjam mesukkan total jumlah pinjaman")
   st.text("> Credit_History adalah untuk mesukkan riwayat kredit peminjam")
-  
+  st.write("-----------------")
+  st.header("Penjelasan Fitur")
+  st.write("Jumlah Pinjaman dan Jangka Waktu Pinjaman, yang memberi tahu kami jumlah pinjaman dalam ribuan dan jangka waktu pinjaman masing-masing dalam bulan.")
+  st.write("Riwayat Kredit menunjukkan apakah pelanggan memiliki hutang yang tidak jelas sebelumnya atau tidak.")
+  st.write("Selain itu, kami juga memiliki detail pelanggan, seperti Jenis Kelamin, Status Perkawinan, pendapatan. Dengan menggunakan fitur-fitur tersebut, saya akan membuat model prediksi yang akan memprediksi variabel target yaitu Status Pinjaman yang mewakili apakah pinjaman akan disetujui atau tidak.")
 
 # this is the main function in which we define our webpage  
 def main():       
